@@ -189,9 +189,9 @@ public class NoxesiumMod implements ClientModInitializer {
         // Re-initialize when moving in/out of the config phase, we assume any server
         // running a proxy that doesn't use the configuration phase between servers
         // has their stuff set up well enough to remember the client's information.
-        ClientConfigurationConnectionEvents.START.register((ignored1, ignored2) -> {
-            uninitialize();
-        });
+        //ClientConfigurationConnectionEvents.START.register((ignored1, ignored2) -> {
+        //    uninitialize();
+        //});
 
         // Register all universal messaging channels
         NoxesiumPackets.registerPackets("universal");
